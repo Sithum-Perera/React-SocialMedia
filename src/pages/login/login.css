@@ -1,0 +1,136 @@
+/* Background Styling */
+.login {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Login Wrapper */
+.loginWrapper {
+  width: 90%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Left Section */
+.loginLeft {
+  text-align: center;
+}
+
+.loginLogo {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.loginDesc {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Login Box */
+.loginBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input Fields */
+.loginInput {
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.loginInput::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.loginInput:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Buttons */
+.loginButton, .loginRegisterButton {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* Login Button */
+.loginButton {
+  background: #1db954;
+  color: white;
+}
+
+.loginButton:hover {
+  background: #1aa34a;
+  transform: scale(1.05);
+}
+
+/* Register Button */
+.loginRegisterButton {
+  background: #ff5733;
+  color: white;
+}
+
+.loginRegisterButton:hover {
+  background: #e64c2c;
+  transform: scale(1.05);
+}
+
+/* Forgot Password */
+.loginForgot {
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.loginForgot:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .loginWrapper {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .loginLogo {
+    font-size: 30px;
+  }
+
+  .loginDesc {
+    font-size: 16px;
+  }
+
+  .loginInput, .loginButton, .loginRegisterButton {
+    height: 45px;
+    font-size: 16px;
+  }
+}
